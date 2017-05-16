@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="heightlineimage.js"></script>
+<script type="text/javascript">
+
+$(function(){
+$('#image_box').heightLineImages();
+$('#click').on('click',function(){
+	count = $('#count').val();
+	$('#image_box').heightLineImages({
+		count: count,
+	});
+});
+
+});
+</script>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+マッピングしたい列数
+<input type="text" value="3" id="count"></input>
+<button id="click">設定</button>
+<div id="image_box">
+	<img src="img/icon_fav_review.png" width="150" height="220px">
+	<img src="img/neko.jpeg"  width="200" height="200px">
+	<img src="img/nezumi.jpeg"  width="200" height="100px">
+	<img src="img/ナマケモノ.jpg"  width="200"height="150px">
+	<img src="img/0142.jpg"  width="200" height="120px">
+	<img src="img/0142.jpg"  width="200" height="120px">
+	<img src="img/0142.jpg"  width="200" height="120px">
+	<img src="img/0142.jpg"  width="200" height="120px">
+	<img src="img/0142.jpg"  width="200" height="120px">
+	<img src="img/neko.jpeg"  width="200" height="200px">
+	<img src="img/nezumi.jpeg"  width="200" height="100px">
+	<img src="img/ナマケモノ.jpg"  width="200"height="150px">
+</div>
+</footer>
+</body>
+</html>
